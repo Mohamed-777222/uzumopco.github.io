@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'EB Garamond', serif;
+    font-size: 18px;         
+    line-height: 1.2;        
+    color: #2c3e50;          
+    -webkit-font-smoothing: antialiased;
+}
+
+header {
+    background-color: #0399f4;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    margin: 0;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+hr {
+    margin: 0;
+    border: 2px solid white;
+}
+
+nav {
+    background-color: #0399f4;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.nav-text {
+    display: inline-flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.na {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.active {
+    color: #0399f4 !important;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.na:hover:not(.active) {
+    transform: scale(1.1);
+    color: black;
+}
+
+main {
+    font-size: clamp(24px, 6vw, 45px);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.add {
+    background-image: url(../media/abstract-bluish-paint-background-wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 82vh;
+    color: white;
+    padding-bottom: 50px;
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+form {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group {
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #0399f4;
+}
+
+.save-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #0399f4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    margin-top: 10px;
+}
+
+.save-btn:hover {
+    background-color: #0277bd;
+}
+
+footer {
+    background-color: #0399f4;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+@media (max-width: 600px) {
+    .nav-text {
+        gap: 10px;
+    }
+    
+    .na {
+        font-size: 16px;
+    }
+
+    form {
+        padding: 20px;
+    }
+}

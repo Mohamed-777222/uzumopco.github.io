@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'EB Garamond', serif;
+    font-size: 18px;         
+    line-height: 1.2;                
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #0399f4;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    margin: 0;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+hr {
+    margin: 0;
+    border: 2px solid white;
+}
+
+nav {
+    background-color: #0399f4;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.nav-text {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.na {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.active {
+    color: #0399f4 !important;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.na:hover:not(.active) {
+    transform: scale(1.1);
+    color: black;
+}
+
+main {
+    font-size: 20px;
+    padding: 50px 10px;
+    background-image: url(../media/abstract-bluish-paint-background-wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 76vh;
+    color: white;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1000px;
+    border: 2px solid #0399f4;
+    border-radius: 10px;
+    border-spacing: 0;
+    overflow: hidden;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+thead {
+    background-color: #0399f4;
+}
+
+td {
+    border: 1px solid #0399f4;
+    padding: 12px 8px;
+}
+
+footer {
+    background-color: #0399f4;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+@media (max-width: 600px) {
+    .nav-text {
+        gap: 10px;
+    }
+    
+    .na {
+        font-size: 16px;
+    }
+
+    main {
+        font-size: 16px;
+    }
+
+    td {
+        padding: 8px 4px;
+    }
+}
