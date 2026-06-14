@@ -2,8 +2,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'EB Garamond', serif;
-    font-size: 18px;         
-    line-height: 1.2;                
+    font-size: 18px;
+    line-height: 1.2;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
 }
@@ -93,6 +93,31 @@ thead {
     background-color: #0399f4;
 }
 
+thead td {
+    color: white;
+    font-weight: bold;
+    padding: 14px 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+tbody tr {
+    background-color: rgba(255, 255, 255, 0.92);
+    color: #111;
+    transition: background-color 0.15s;
+}
+
+tbody tr:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(220, 237, 250, 0.95);
+}
+
+tbody tr:nth-child(even):hover {
+    background-color: rgba(200, 228, 248, 1);
+}
+
 td {
     border: 1px solid #0399f4;
     padding: 12px 8px;
@@ -105,6 +130,41 @@ footer {
     color: white;
 }
 
+.empty-message {
+    text-align: center;
+    margin: 2rem 0 1rem;
+    font-size: 1.05rem;
+    color: #666;
+}
+
+.empty-message a {
+    color: inherit;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.notes-cell {
+    max-width: 220px;
+    word-break: break-word;
+    white-space: pre-wrap;
+}
+
+.delete-btn {
+    background: none;
+    border: 1px solid #c0392b;
+    color: #c0392b;
+    border-radius: 4px;
+    padding: 2px 8px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: background 0.15s, color 0.15s;
+}
+
+.delete-btn:hover {
+    background: #c0392b;
+    color: #fff;
+}
+
 footer p {
     margin: 5px 0;
 }
@@ -113,7 +173,7 @@ footer p {
     .nav-text {
         gap: 10px;
     }
-    
+
     .na {
         font-size: 16px;
     }
