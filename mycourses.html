@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/my_courses.css">
     <title>My Courses</title>
 </head>
+
 <body>
     <header>
         <h1>Personal Course Organizer</h1>
@@ -23,6 +26,9 @@
         </div>
     </nav>
     <main>
+        <div id="empty-message" class="empty-message" style="display:none;">
+            No courses yet. <a href="addcourse.html">Add your first course →</a>
+        </div>
         <div class="table-container">
             <table>
                 <thead>
@@ -31,39 +37,10 @@
                         <td>Lecturer</td>
                         <td>Credit hours</td>
                         <td>Notes</td>
-                    </tr> 
+                        <td>Remove</td>
+                    </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>It</td>
-                        <td>Dr. Alaa Abd El Aziz</td>
-                        <td>4</td>
-                        <td>Top Priority</td>
-                    </tr>
-                    <tr>
-                        <td>PL</td>
-                        <td>Dr. Amr</td>
-                        <td>4</td>
-                        <td>Need Concentration</td>
-                    </tr>
-                    <tr>
-                        <td>Electronics</td>
-                        <td>Dr. Azza</td>
-                        <td>4</td>
-                        <td>Practical</td>
-                    </tr>
-                    <tr>
-                        <td>Statistics</td>
-                        <td>Dr. Asmaa</td>
-                        <td>3</td>
-                        <td>Complex</td>
-                    </tr>
-                    <tr>
-                        <td>Discreet Math</td>
-                        <td>Dr. Mohamed</td>
-                        <td>3</td>
-                        <td>Logical</td>
-                    </tr>
+                <tbody id="courses-tbody">
                 </tbody>
             </table>
         </div>
@@ -72,5 +49,7 @@
         <p>Made by Mohamed Saeed Abd El Raheem.</p>
         <p>Helwan University. Faculty of Computers and AI.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
