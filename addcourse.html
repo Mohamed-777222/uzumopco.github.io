@@ -27,31 +27,33 @@
             Add courses by Course name, Lecturer,<br>Credit hours and Notes.<br>
             You can add up to 5 courses.
         </main>
+        <div id="form-feedback" class="form-feedback" style="display:none;"></div>
         <div class="form-wrapper">
-            <form action="mycourses.html">
+            <form id="course-form">
                 <div class="input-group">
-                    <label>Course Name</label>
-                    <input type="text" placeholder="Course name" required>
+                    <label for="course-name">Course Name</label>
+                    <input id="course-name" type="text" placeholder="Course name" required>
                 </div>
                 <div class="input-group">
-                    <label>Course Lecturer</label>
-                    <input type="text" placeholder="Lecturer's name" required>
+                    <label for="course-lecturer">Course Lecturer</label>
+                    <input id="course-lecturer" type="text" placeholder="Lecturer's name" required>
                 </div>
                 <div class="input-group">
-                    <label>Credit Hours</label>
-                    <input type="number" placeholder="Hours" required>
+                    <label for="credit-hours">Credit Hours</label>
+                    <input id="credit-hours" type="number" placeholder="Hours" min="1" required>
                 </div>
                 <div class="input-group">
-                    <label>Notes</label>
-                    <textarea placeholder="Additional notes" required></textarea>
+                    <label for="course-notes">Notes</label>
+                    <textarea id="course-notes" placeholder="Additional notes" required></textarea>
                 </div>
                 <button type="submit" class="save-btn">Save Course</button>
             </form>
         </div>
-    </div>     
+    </div>
     <footer>
         <p>Made by Mohamed Saeed Abd El Raheem.</p>
         <p>Helwan University. Faculty of Computers and AI.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
