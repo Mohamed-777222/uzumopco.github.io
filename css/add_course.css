@@ -3,9 +3,9 @@ body {
     padding: 0;
     overflow-x: hidden;
     font-family: 'EB Garamond', serif;
-    font-size: 18px;         
-    line-height: 1.2;        
-    color: #2c3e50;          
+    font-size: 18px;
+    line-height: 1.2;
+    color: #2c3e50;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -109,7 +109,8 @@ label {
     font-size: 16px;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     padding: 12px;
     border: 2px solid #e0e0e0;
@@ -118,7 +119,8 @@ input, textarea {
     box-sizing: border-box;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     outline: none;
     border-color: #0399f4;
 }
@@ -141,6 +143,38 @@ input:focus, textarea:focus {
     background-color: #0277bd;
 }
 
+.form-feedback {
+    margin: 0.75rem auto 1rem;
+    padding: 0.6rem 1.1rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    max-width: 480px;
+    text-align: center;
+}
+
+.form-feedback.info {
+    background: #e8f4fd;
+    color: #1a6a9a;
+    border: 1px solid #b3d7f0;
+}
+
+.form-feedback.success {
+    background: #eafaf1;
+    color: #1e7e4a;
+    border: 1px solid #a9dfbf;
+}
+
+.form-feedback.error {
+    background: #fdf0f0;
+    color: #a02020;
+    border: 1px solid #f0b8b8;
+}
+
+.save-btn:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
 footer {
     background-color: #0399f4;
     padding: 20px;
@@ -156,7 +190,7 @@ footer p {
     .nav-text {
         gap: 10px;
     }
-    
+
     .na {
         font-size: 16px;
     }
